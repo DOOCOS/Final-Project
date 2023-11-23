@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Planner</title>
+</head>
+<body>
+
+    <body background="Imagenes/images15.jpg"></body>
+
+    <div id="logo">        
+        <img src="Imagenes/descarga.jpg">
+    </div>    
+    <div class="container">
+        <div class="section" id="agregar">            
+            <h2>Crear Tarea</h2>            
+            <div class="cont-add">    
+                <form id="task-form">
+                    <label for="titulo">Título:</label>
+                    <br>
+                    <input type="text" id="titulo" name="titulo" required>
+                    <br>
+                    <br>
+                    <label for="descripcion">Descripción:</label>
+                    <br>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                    <br>
+                    <br>
+                    <button id="crear-tarea">Crear Tarea</button>                  
+                    <br>                               
+                                                             
+                </form>
+            </div>
+        </div>
+        <div class="section" id="tp">
+            <h2>Tareas Pendientes</h2>
+            <ul class="tareas-pendientes" id="tareas-pendientes">
+                <!-- Aquí se mostrarán las tareas pendientes -->
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Tareas Completadas</h2>
+            <ul id="tareas-completadas">
+                <!-- Aquí se mostrarán las tareas completadas -->
+            </ul>
+        </div>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+<script src="./JS/main.js"></script>
+</html>
